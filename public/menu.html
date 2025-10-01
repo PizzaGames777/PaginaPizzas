@@ -1,0 +1,116 @@
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/StyleMenu.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Pizza Retro</title>
+  </head>
+  <body>
+    <script src="../scripts.js/menu.js"></script>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="arcade.html">Arcade</a></li>
+          <li><a href="contactos.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="title-container">
+        <h1 class="titulo">🍕 MENÚ RETRO 🍕</h1>
+        <img class="Carrito" src="../imgs/Carrito2.webp" alt="Carrito de compras">
+        
+        <div id="popup-carrito" class="popup oculto">
+          <div class="popup-contenido">
+            <h2>🛒 Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p id="total-carrito">Total: $0</p>
+            <button id="cerrar-popup">Cerrar</button>
+            <button id="comprar-popup">Comprar</button>
+          </div>
+        </div>
+      </section>
+      <section class="menu-pizzas">
+        <div class="pizza-box" data-id="1" data-nombre="Pizza NPC" data-precio="9990">
+          <img src="../Imgs/PizzaNpc.jpg" alt="Pizza NPC" />
+          <h3>Pizza NPC</h3>
+          <p>Clasica y sencilla, es lo que hace a esta pizza de mozzarella una maravilla.</p>
+          <span>$9.990</span>
+        </div>
+
+        <div class="pizza-box" data-id="2" data-nombre="Pizza Tortugas Ninja" data-precio="11990">
+          <img src="../Imgs/PizzaTortugasNinja.jpg" alt="Pizza Tortugas Ninja" />
+          <h3>Pizza Tortugas Ninja</h3>
+          <p>Con pepperonis como caparazon, esta pizza es tu mejor opción.</p>
+          <span>$11.990</span>
+        </div>
+
+        <div class="pizza-box" data-id="3" data-nombre="Pizza Iron Man" data-precio="12990">
+          <img src="../Imgs/PizzaIronman.jpg" alt="Pizza Iron Man" />
+          <h3>Pizza Iron Man</h3>
+          <p>Con jamon de acero, la pizza Stark tiene un sabor verdadero.</p>
+          <span>$12.990</span>
+        </div>
+
+        <div class="pizza-box" data-id="4" data-nombre="Pizza Pikmin" data-precio="10990">
+          <img src="../Imgs/PizzaPikmin.jpg" alt="Pizza Pikmin" />
+          <h3>Pizza Pikmin</h3>
+          <p>La pizza fugazzeta haciendo una Vendetta de sabor, sin duda es lo mas parecido al amor.</p>
+          <span>$10.990</span>
+        </div>
+
+        <div class="pizza-box" data-id="5" data-nombre="Pizza Mega Man" data-precio="11490">
+          <img src="../Imgs/PizzaMegaman.jpg" alt="Pizza Mega Man" />
+          <h3>Pizza Mega Man</h3>
+          <p>Con queso roquefort, esta pizza sin duda es lo mejor para tu confort.</p>
+          <span>$11.490</span>
+        </div>
+
+        <div class="pizza-box" data-id="6" data-nombre="Pizza Galaga" data-precio="12490">
+          <img src="../Imgs/PizzaGalaga.jpg" alt="Pizza Galaga" />
+          <h3>Pizza Galaga</h3>
+          <p>Compartir una Pizza Napolitana con tu pana es lo mejor para aliviar el estres, 
+            al igual que jugar al galaga sin duda lo es.</p>
+          <span>$12.490</span>
+        </div>
+      </section>
+      <h1 class="titulo">🥤 BEBIDAS Y APERITIVOS 🥤</h1>
+      <section class="menu-pizzas">
+        <div class="pizza-box" data-id="7" data-nombre="Cocacola" data-precio="3490">
+          <img src="../Imgs/Cocacola.png" alt="Cocacola!" />
+          <h3>Cocacola!</h3>
+          <p>Compartir una Pizza Napolitana con tu pana es lo mejor para aliviar el estres, 
+            al igual que jugar al galaga sin duda lo es.</p>
+          <span>$3.490</span>
+        </div>
+        <div class="pizza-box" data-id="8" data-nombre="Powerade Celeste" data-precio="2490">
+          <img src="../Imgs/Powerade Celeste.png" alt="Powerade Celeste!" />
+          <h3>Powerade Celeste!</h3>
+          <p>Compartir una Pizza Napolitana con tu pana es lo mejor para aliviar el estres, 
+            al igual que jugar al galaga sin duda lo es.</p>
+          <span>$2.490</span>
+        </div>
+        <div class="pizza-box" data-id="9" data-nombre="Papas Fritas" data-precio="3490">
+          <img src="../Imgs/papasfritas.png" alt="Papas Fritas!">
+          <h3>Papas Fritas!</h3>
+          <p>Compartir una Pizza Napolitana con tu pana es lo mejor para aliviar el estres, 
+            al igual que jugar al galaga sin duda lo es.</p>
+          <span>3.490</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Pizza Retro. Todos los derechos reservados.</p>
+      <p>Desarrollado por PizzaGame</p>
+    </footer>
+    
+    
+  </body>
+  </html>

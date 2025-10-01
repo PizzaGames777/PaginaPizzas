@@ -1,0 +1,262 @@
+/*Son margenes basicos*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*el font family es para la fuente de las letras, la cual esta sacada de google con un link
+en el html.  el background es para el fondo negro con degrade en gris marron.
+el color es para la fuente de las letras. luego una alineacion de texto y un cursor 
+personalizado*/
+body {
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(135deg, #000000, #1b062c);
+  
+  text-align: center;
+  cursor: url('Imgs/cursor32.png') 0 0, auto ;
+}
+
+/*display flex y justify content para mantener distancia
+entre los elementos, y gap para la distancia minima de estos*/
+.navbar .nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/*sacar el puntito de lista.*/
+.nav-list li {
+  list-style: none;
+}
+
+/*color de texto del nav, sacar los reenglones y una transicion de color en el hover*/
+.nav-list li a {
+  color: #ffff00;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/*cambio de color y sombra de color linda en la transicion (hover)*/
+.navbar .nav-list li a:hover {
+  color: cyan;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* color del heather, espacio para este y una sombra retro */
+.header {
+  background-color: #ff00ff;
+  padding: 20px 0;
+  box-shadow: 0 0 20px #ff00ff;
+  animation: pulseShadow infinite 2s;
+}
+
+/* distancia del main con el heather y nav */
+.main-content {
+  padding: 40px 20px;
+}
+
+.title-container{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*alineacion del titulo, color de este, sombra de este. margen con el nav y tamaño de letra*/
+.titulo {
+  text-align: center;
+  color: #ff00ff;
+  text-shadow: 0 0 15px #ff00ff;
+  margin-top: 40px;
+  font-size: 30px;
+  flex: 0 0 90%;
+}
+
+.Carrito{
+  width: 75px;
+  margin-top: 20px;
+  border-radius: 100%;
+  animation: pulseShadow infinite 2s;
+}
+
+/*distancia con un display flex, poner todo en el medio, separarlos con el wrap y ponerlos
+en 2 con el gap. luego un padding entre todos */
+.menu-pizzas {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-inline: auto;
+  width: 90%;
+  gap: 40px;
+  padding: 40px;
+  place-items: center;
+}
+
+/*color de la caja, borde con color y con sombra, padding con el interior de la caja
+un bordecito para que quede mas con el tono pizza, tamaño, alineacion de texto y 
+animacion definida en animaciones.*/
+
+.pizza-box {
+  background-color: #111;
+  border: 2px solid #800080;
+  box-shadow: 0 0 15px #800080;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  animation: pulseShadow 2s infinite;
+}
+
+.menu-pizzas :hover{
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+/*proporciones de la imagen, borde, un margen y borde de esta.*/
+.pizza-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px cyan;
+}
+
+/*color, tamaño y margen*/
+.pizza-box h3 {
+  color: #ffcc00;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/*lo mismo.*/
+
+.pizza-box p {
+  color: #ad2edf;
+  font-size: 10px;
+  margin: 10px 0;
+}
+
+/*margen superior, tamaño, color de texto y sombra de este.*/
+.pizza-box span {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/*Pulso de sombra, pasa de 0 a 100 dependiendo el tiempo que le des. y con ello aumenta en 
+tamaño y se pone en un tono mas claro. */
+@keyframes pulseShadow {
+  0% {
+    box-shadow: 0 0 10px #800080;
+  }
+  50% {
+    box-shadow: 0 0 30px #ff00ff;
+  }
+  100% {
+    box-shadow: 0 0 10px #800080;
+  }
+}
+
+
+
+/*footer con color negro de fondo, letras cyan, todo centrado, con padding y tamaño de fuente
+un borde superior y una sombra en los bordes.*/
+
+.footer {
+  background-color: #000000;
+  color: #00ffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 10px;
+  border-top: 2px solid #ff00ff;
+  box-shadow: 0 -2px 10px #ff00ff;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-contenido {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ff00ff;
+  padding: 20px;
+  width: 400px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff00ff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  overflow-y: auto;
+  max-height: 80vh;
+  color: rgb(245, 236, 236);
+}
+
+.popup-contenido ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+.popup-contenido li{
+  margin: 10px;
+  color: #00ffff;
+}
+
+.popup-contenido button {
+  background: #be0f0f;
+  border: none;
+  color: #000;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.eliminar-item {
+  margin-left: 10px;
+  border-color: #381119;
+  border: none;
+  padding: 2px 5px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.eliminar-item:hover {
+  background-color: #a7011d;
+}
+
+#cerrar-popup:hover {
+  background-color: #ff1010;
+}
+#comprar-popup:hover {
+  background-color: #ff1010;
+}
+
+.oculto {
+  display: none;
+}
+
+.cambioColor {
+  animation: colorChange 0.8s ease-out;
+  border: 2px solid #ff00ff !important;
+}
+
+@keyframes colorChange{
+  0% {
+    box-shadow: 0 0 10px #cc0022;
+  }
+  50%{
+    box-shadow: 0 0 40px #cc0022;
+  }
+  100%{
+    box-shadow: 0 0 10px #cc0022;
+  }
+}
