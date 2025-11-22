@@ -227,6 +227,67 @@ padding y sombra azul violeta neon */
   text-shadow: 0 0 5px #3b38ff, 0 0 10px #110f97, 0 0 20px #110f97;
 }
 
+/* Sección Nosotros */
+.nosotros {
+  margin: 60px auto;
+  padding: 30px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #1a001f;
+  border: 3px solid #ff00ff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px #ff00ff;
+}
+
+.nosotros-title {
+  color: #ffff00;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff00ff;
+  animation: neon 2s ease-in-out infinite alternate;
+}
+
+/* Grid responsivo retro */
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+/* Box de cada integrante */
+.miembro {
+  background-color: #110022;
+  border: 2px solid #00ffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 260px;
+  box-shadow: 0 0 15px #00ffff;
+  text-align: center;
+}
+
+/* Imagen retro */
+.miembro-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border: 3px solid #ff00ff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff00ff;
+  margin-bottom: 15px;
+}
+
+/* Texto de la biografía */
+.miembro-text {
+  color: #ff9cff;
+  font-size: 12px;
+  line-height: 1.6;
+  text-shadow: 0 0 7px #ff00ff;
+}
+
+
+
 /* fondo oscuro sin degrade, color de fuente, padding, tamaño de fuente
 borde superior y borde shadow general*/
 .footer {
